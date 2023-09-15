@@ -1,10 +1,12 @@
-import React from 'react'
+import React from 'react';
+// import { AiOutlineSearch } from "react-icons/fa";
+
 
 const Search = () => {
   return (
     <div >
       <input type="search" className="search" placeholder='Search...'></input>
-      <i class="fa-solid fa-magnifying-glass"></i>
+      {/* <AiOutlineSearch/> */}
     </div>
   );
 }

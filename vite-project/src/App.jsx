@@ -6,6 +6,7 @@ import Employment from "./Employment";
 import Header from "./components/Header";
 import Footer from "./components/Footer";
 import ContactUs from "./ContactUs";
+import Error from "./Error";
 import {ThemeProvider} from "styled-components";
 import { BrowserRouter, Routes, Route } from "react-router-dom";
 import { GlobalStyle } from "./GlobalStyle";
@@ -18,7 +19,8 @@ const App = () => {
       white: "#fff",
       black: " #212529",
       helper: "#8490ff",
-      bg: "rgb(249 249 255)",
+      // bg: "rgb(249 249 255)",
+      bg: "#add8e6",
       footer_bg: "#0a1435",
       btn: "rgb(98 84 243)",
       border: "rgba(98, 84, 243, 0.5)",
@@ -45,7 +47,7 @@ const App = () => {
           <Route path="/StudyMaterials" element={<StudyMaterials />} />
           <Route path="/Employment" element={<Employment />} />
           <Route path="/ContactUs" element={<ContactUs />} />
-          {/* <Route path="*" element={<Error />} /> */}
+          <Route path="*" element={<Error />} />
         </Routes>
         <Footer/>
       </BrowserRouter>
