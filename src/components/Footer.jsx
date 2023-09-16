@@ -1,4 +1,4 @@
-import React from 'react';
+import React from "react";
 import styled from "styled-components";
 import { Button } from "../styles/Button";
 import { NavLink } from "react-router-dom";
@@ -20,7 +20,6 @@ const Footer = () => {
           </div>
         </div>
       </section>
-    
 
       <footer>
         <div className="container grid grid-four-column">
@@ -43,8 +42,6 @@ const Footer = () => {
             </form>
           </div>
 
-          
-
           {/* 3rd column  */}
           <div className="footer-contact">
             <h3>Call Us</h3>
@@ -57,7 +54,8 @@ const Footer = () => {
           <hr />
           <div className="container grid grid-two-column">
             <p>
-              @{new Date().getFullYear()} Gram Shiksha Kendra. All Rights Reserved
+              @{new Date().getFullYear()} Gram Shiksha Kendra. All Rights
+              Reserved
             </p>
             <div>
               <p>PRIVACY POLICY</p>
@@ -66,10 +64,8 @@ const Footer = () => {
           </div>
         </div>
       </footer>
-
     </Wrapper>
-
-  )
+  );
 };
 
 const Wrapper = styled.section`
@@ -98,7 +94,6 @@ const Wrapper = styled.section`
     p {
       color: ${({ theme }) => theme.colors.white};
     }
-    
 
     .footer-bottom--section {
       padding-top: 9rem;
@@ -131,5 +126,4 @@ const Wrapper = styled.section`
   }
 `;
 
-
-export default Footer
+export default Footer;
