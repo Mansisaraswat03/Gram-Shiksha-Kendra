@@ -12,8 +12,15 @@ const About = () => {
           <h3 className="hero-top-data">ABOUT US </h3>
           {/* <p className="hero-heading">Change is the end result of all true learning.Go confidently in the direction of your dreams! ...</p> */}
           <p className="hero-para">
-            Change is the end result of all true learning.Go confidently in the
-            direction of your dreams! ...
+            Gram Shiksha Kendra is a reputable basic education provider in rural
+            areas. Our mission is to bridge the education gap in underserved
+            communities by offering quality education to children who lack
+            access to proper schooling. With a team of dedicated teachers and a
+            well-rounded curriculum, we strive to empower students with the
+            knowledge and skills they need to thrive in today's competitive
+            world. At Gram Shiksha Kendra, we believe that education is the key
+            to unlocking opportunities and transforming lives, and we are
+            committed to making a positive impact in the lives of our students.
           </p>
           <Button className="btn hireme-btn">
             <NavLink to="/contactUs"> Contact </NavLink>
@@ -74,7 +81,7 @@ const Wrapper = styled.section`
     text-align: center;
   }
 
-  .hero-img{
+  .hero-img {
     max-width: 80%;
   }
 

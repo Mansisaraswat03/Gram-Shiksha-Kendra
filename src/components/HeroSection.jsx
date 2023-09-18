@@ -7,21 +7,24 @@ const HeroSection = () => {
   return (
     <Wrapper>
       <div className="container grid grid-two-column">
-        <div className="section-hero-data">
-          <p className="hero-top-data">Gram Shiksha Kendra</p>
-          <h1 className="hero-heading"></h1>
-          <p className="hero-para">
-           ANYTIME ANYWHERE , LEARN ON YOUR SUITABLE TIME 📖
-          </p>
+        <div className="section-hero-data bg">
+          <h1 className="hero-top-data">Gram Shiksha Kendra</h1>
+          <h2 className="hero-heading">Empower Rural Communities With Education</h2>
+          <h3 className="hero-para">
+           {/* ANYTIME ANYWHERE , LEARN ON YOUR SUITABLE TIME 📖 */}
+          </h3>
+          <h3 className="hero-para">
+           Join us today in providing basic education and transforming lives in rural areas around globe .
+          </h3>
           <Button className="btn hireme-btn">
-            <NavLink to="/contactUs"> Contact </NavLink>
+            <NavLink to="/Mentorship"> JOIN US </NavLink>
           </Button>
         </div>
 
         {/* for image  */}
         <div className="section-hero-image">
           <picture>
-            <img src="..\images\Hero.png" alt="hero image" className="hero-img " />
+            <img src="..\images\background.jpg" alt="hero image" className="hero-img " />
           </picture>
         </div>
       </div>
@@ -38,6 +41,16 @@ const Wrapper = styled.section`
     justify-content: center;
   }
 
+  ${'' /* .bg::before{
+    content : "";
+    postion: absolute;
+    background: url("..\images\background.jpg");
+    height:100%;
+    width:100%;
+    z-index:-1;
+    opacity: 0.8;
+  } */}
+
   .btn {
     max-width: 16rem;
   }
@@ -51,7 +64,7 @@ const Wrapper = styled.section`
 
   .hero-heading {
     text-transform: uppercase;
-    font-size: 6.4rem;
+    font-size: 4.4rem;
   }
 
   .hero-para {

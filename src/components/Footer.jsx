@@ -42,7 +42,17 @@ const Footer = () => {
             </form>
           </div>
 
-          {/* 3rd column  */}
+           {/* 3rd column  */}
+           <div className="footer-social">
+            <h3> Scan to access our App</h3>
+            <div className="footer-Qr">
+             <picture>
+              <img src="..\images\QR.png" alt="qr"  width="100" height="100" />
+             </picture>
+            </div>
+          </div>
+
+          {/* 4th column  */}
           <div className="footer-contact">
             <h3>Call Us</h3>
             <h3>+91 1234567899</h3>

@@ -5,11 +5,14 @@ import StudyMaterials from "./StudyMaterials";
 import Employment from "./Employment";
 import Header from "./components/Header";
 import Footer from "./components/Footer";
+import About from "./components/About";
 import ContactUs from "./ContactUs";
 import Error from "./Error";
-import {ThemeProvider} from "styled-components";
+import { ThemeProvider } from "styled-components";
 import { BrowserRouter, Routes, Route } from "react-router-dom";
 import { GlobalStyle } from "./GlobalStyle";
+import GoToTop from "./components/GoToTop";
+import Donate from "./components/Donate";
 
 const App = () => {
   const theme = {
@@ -34,28 +37,27 @@ const App = () => {
     media: { mobile: "768px", tab: "998px" },
   };
 
-
   return (
     <ThemeProvider theme={theme}>
-    <GlobalStyle/>
-     <BrowserRouter>  
+      <GlobalStyle />
+      <GoToTop />
+      <Donate/>
+      <BrowserRouter>
         <Header />
         <Routes>
           <Route path="/" element={<Home />} />
-          <Route path="/Mentorship" element={<Mentorship />} />
+          {/* <Route path="/Mentorship" element={<Mentorship />} />
           <Route path="/SkillProgress" element={<SkillProgress />} />
-          <Route path="/StudyMaterials" element={<StudyMaterials />} />
+          <Route path="/StudyMaterials" element={<StudyMaterials />} /> */}
+          <Route path="/About" element={<About />} />
           <Route path="/Employment" element={<Employment />} />
           <Route path="/ContactUs" element={<ContactUs />} />
           <Route path="*" element={<Error />} />
         </Routes>
-        <Footer/>
+        <Footer />
       </BrowserRouter>
     </ThemeProvider>
-
-      );
-  
+  );
 };
 
 export default App;
-
