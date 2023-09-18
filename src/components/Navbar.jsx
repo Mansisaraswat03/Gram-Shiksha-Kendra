@@ -122,15 +122,6 @@ const Navbar = () => {
     <li>
     <NavLink className="navbar-link" onClick={() => setOpenMenu(false)} to="/"> Home</NavLink>
     </li>
-    {/* <li>
-    <NavLink className="navbar-link" onClick={() => setOpenMenu(false)} to="/Mentorship">Mentorship </NavLink>
-    </li>
-    <li>
-    <NavLink className="navbar-link" onClick={() => setOpenMenu(false)} to="/SkillProgress">SkillProgress</NavLink>
-    </li>
-    <li>
-    <NavLink className="navbar-link" onClick={() => setOpenMenu(false)} to="/StudyMaterials">StudyMaterials</NavLink>
-    </li> */}
     <li>
     <NavLink className="navbar-link" onClick={() => setOpenMenu(false)} to="/About">About-Us</NavLink>
     </li>

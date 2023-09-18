@@ -1,7 +1,4 @@
 import Home from "./Home";
-import Mentorship from "./Mentorship";
-import SkillProgress from "./SkillProgress";
-import StudyMaterials from "./StudyMaterials";
 import Employment from "./Employment";
 import Header from "./components/Header";
 import Footer from "./components/Footer";
@@ -46,9 +43,6 @@ const App = () => {
         <Header />
         <Routes>
           <Route path="/" element={<Home />} />
-          {/* <Route path="/Mentorship" element={<Mentorship />} />
-          <Route path="/SkillProgress" element={<SkillProgress />} />
-          <Route path="/StudyMaterials" element={<StudyMaterials />} /> */}
           <Route path="/About" element={<About />} />
           <Route path="/Employment" element={<Employment />} />
           <Route path="/ContactUs" element={<ContactUs />} />
