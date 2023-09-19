@@ -1,4 +1,5 @@
 import React from "react";
+import { Link } from "react-router-dom";
 import styled from "styled-components";
 
 function Service() {
@@ -237,7 +238,7 @@ function Service() {
               </div>
             </div>
 
-            <a href ="/Employment"><div className="col__3">
+            <Link to ="/Employment"><div className="col__3">
               <div className="service__box pointer">
                 <div className="icon">
                   <svg
@@ -272,7 +273,7 @@ function Service() {
                 </div>
               </div>
             </div>
-            </a>
+            </Link>
           </div>
         </div>
       </div>
