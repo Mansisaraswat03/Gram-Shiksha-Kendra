@@ -5,6 +5,7 @@ import Footer from "./components/Footer";
 import About from "./components/About";
 import ContactUs from "./ContactUs";
 import Error from "./Error";
+import Service from "./Service";
 import { ThemeProvider } from "styled-components";
 import { BrowserRouter, Routes, Route } from "react-router-dom";
 import { GlobalStyle } from "./GlobalStyle";
@@ -46,6 +47,7 @@ const App = () => {
           <Route path="/About" element={<About />} />
           <Route path="/Employment" element={<Employment />} />
           <Route path="/ContactUs" element={<ContactUs />} />
+          <Route path="/Service" element={<Service />} />
           <Route path="*" element={<Error />} />
         </Routes>
         <Footer />

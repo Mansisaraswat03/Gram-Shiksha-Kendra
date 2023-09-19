@@ -123,13 +123,10 @@ const Navbar = () => {
     <NavLink className="navbar-link" onClick={() => setOpenMenu(false)} to="/"> Home</NavLink>
     </li>
     <li>
-    <NavLink className="navbar-link" onClick={() => setOpenMenu(false)} to="/About">About-Us</NavLink>
+    <NavLink className="navbar-link" onClick={() => setOpenMenu(false)} to="/About">About</NavLink>
     </li>
     <li>
-    <NavLink className="navbar-link" onClick={() => setOpenMenu(false)} to="/Employment">Employment</NavLink>
-    </li>
-    <li>
-    <NavLink className="navbar-link" onClick={() => setOpenMenu(false)} to="/ContactUs">ContactUs</NavLink>
+    <NavLink className="navbar-link" onClick={() => setOpenMenu(false)} to="/ContactUs">Contact</NavLink>
     </li>
     <li>
     <Search />

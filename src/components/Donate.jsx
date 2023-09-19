@@ -7,7 +7,7 @@ const Donate = () => {
   return (
     <Wrapper>
       <div className="top-btn" >
-          <a href="https://www.indiadonates.org/donate-now" target="_blank"><img src="../images/donate1.webp" className="top-btn--icon" width="100" height="100" /></a>
+          <a href="https://www.indiadonates.org/donate-now" target="_blank"><img src="../images/donate.png" className="top-btn--icon" width="100" height="100" /></a>
         </div>
     </Wrapper>
   );

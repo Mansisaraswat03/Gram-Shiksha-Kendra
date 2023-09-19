@@ -127,6 +127,13 @@ li {
     font-size: 1.8rem;
     cursor: pointer;
     }
+    .col__3 {
+        max-width: 33.333333%;
+        display: inline-flex;
+        padding: 10px;
+        flex-direction: row;
+        margin-top: 20px;
+      }
 
 
 /* ===========================================
