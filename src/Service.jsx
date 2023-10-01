@@ -78,7 +78,7 @@ function Service() {
 
   return (
     <Wrapper>
-      <div className="service component__space" id="Services">
+      <div className="service component__space test" id="Services">
         <div className="heading">
           <h1 className="heading">Our Features</h1>
         </div>
